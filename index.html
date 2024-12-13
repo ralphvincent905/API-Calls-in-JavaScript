@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Calls in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lab 10: API Calls in JavaScript</h1>
+        <button id="fetchBtn">Fetch Data with fetch()</button>
+        <button id="xhrBtn">Fetch Data with XHR</button>
+
+        <div id="dataDisplay">
+            <h3>Fetched Data</h3>
+            <p id="title"></p>
+            <p id="body"></p>
+        </div>
+
+        <form id="postForm">
+            <input type="text" id="postTitle" placeholder="Post Title" required>
+            <textarea id="postBody" placeholder="Post Body" required></textarea>
+            <button type="submit">Submit Post</button>
+        </form>
+
+        <form id="putForm">
+            <input type="number" id="postId" placeholder="Post ID to Update" required>
+            <input type="text" id="putTitle" placeholder="New Put Title" required>
+            <textarea id="putBody" placeholder="Put Body" required></textarea>
+            <button type="submit">Submit Put</button>
+        </form>
+
+        <div id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
